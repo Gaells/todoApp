@@ -19,14 +19,15 @@ const Home = () => {
         categories.map(category=> (
         <Box p='4' bg='blu200' key={category.id}>
           <Text color="blu500">{category.name}</Text>
-          </Box>)
+        </Box>)
       )}
       <Pressable 
         onPress={() => {
-          navigation.navigate("CreateTask");
+          navigation.navigate("CreateCategory");
       }}>
         <Text variant="text4XL" color="green500">
-          Navegue até criação de Tarefa</Text>
+          Navegue até criação de Categoria.
+        </Text>
       </Pressable>
     </View>
   )

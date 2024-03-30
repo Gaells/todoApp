@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid/non-secure"
-import { palette } from "../theme/colors"
+import { palette } from "../theme/colors" 
 
 export const getColors = () => {
   const colors: IColor[] = Object.keys(palette).map((paletteColor) => {
